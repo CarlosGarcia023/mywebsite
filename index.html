@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume</title>
+    <title>Carlos Garcia - Cybersecurity Professional</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width:800px)" href="tablet.css">
+    <link rel="stylesheet" media="screen and (max-width:530px)" href="phone.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <style>
+        /* Additional CSS styles for the new sections */
         body {
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f2f2f2;
             color: #333;
         }
 
@@ -23,105 +25,80 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
-        h1,
-        h2,
-        h3 {
-            color: #007bff;
-        }
-
         h2 {
-            border-bottom: 2px solid #007bff;
-            padding-bottom: 5px;
-            margin-bottom: 10px;
-        }
-
-        h3 {
-            margin-top: 20px;
-        }
-
-        .contact-info {
-            margin-bottom: 20px;
-        }
-
-        .contact-info p {
-            margin: 5px 0;
-        }
-
-        .section {
-            margin-bottom: 20px;
-        }
-
-        .section h3 {
-            margin-top: 0;
+            color: #007bff;
+            margin-top: 10px;
         }
 
         ul {
             list-style-type: none;
             padding: 0;
-            margin: 0;
         }
 
-        ul li {
+        li {
             margin-bottom: 5px;
         }
 
-        .skills {
-            font-weight: bold;
+        /* Additional style for contact information */
+        .contact-info p {
+            margin: 5px 0;
         }
     </style>
 </head>
-
 <body>
-    <div class="container">
-        <div class="contact-info">
-            <p>(956)-282-0240 | carlosgarcia2245@outlook.com | Zapata, Texas</p>
-        </div>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+        </ul>
+    </nav>
 
-        <div class="section">
-            <h2>EDUCATION</h2>
-            <p><strong>University of Texas at Rio Grande Valley, Edinburg, Texas</strong><br>
+    <section id="home">
+        <div class="main">
+            <h1 class="headings">Carlos Garcia <br>Cybersecurity Professional</h1>
+            <h2>(956)-282-0240 | carlosgarcia2245@outlook.com</h2>
+            <br>
+            <button class="btn"><a href="#contact">Contact Me</a></button>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>Professional Experience</h2>
+            <p>University of Texas at Rio Grande Valley, Edinburg, Texas<br>
                 Graduation: December 2025 (Expected)<br>
                 Bachelor of Science in Cyber Security<br>
                 GPA: 3.86/4.00
             </p>
-            <p><strong>Zapata High School, Zapata, Texas</strong><br>
+            <p>Zapata High School, Zapata, Texas<br>
                 Awards: Zapata Early College Academy, Border Patrol YOTM/YOTY, Top Ten (Rank 9), HSF (Hispanic Scholarship Fund) 23-24 Scholar
             </p>
-            <p><strong>Relevant Coursework:</strong><br>
+            <p>Relevant Coursework:<br>
                 Introduction to Cyberspace, Introduction to Programming Python, Foundations of Systems I, II, Prog Cyber Sys Reverse Eng.
             </p>
         </div>
+    </section>
 
-        <div class="section">
-            <h2>Professional Experience</h2>
-            <p>University of Texas at Rio Grande Valley, Edinburg, Texas<br />
-                Graduation: December 2025 (Expected)<br />
-                Bachelor of Science in Cyber Security<br />
-                GPA: 3.86/4.00
-            </p>
-            <p>Zapata High School, Zapata, Texas<br />
-                Awards: Zapata Early College Academy, Border Patrol YOTM/YOTY, Top Ten (Rank 9), HSF (Hispanic Scholarship Fund) 23-24 Scholar
-            </p>
-            <p>Relevant Coursework:<br />
-                Introduction to Cyberspace, Introduction to Programming Python, Foundations of Systems I, II, Prog Cyber Sys Reverse Eng.
-            </p>
-        </div>
-
-        <div class="section">
-            <h2>RESEARCH AND PROJECTS</h2>
+    <section id="portfolio">
+        <div class="container">
+            <h2>Case Studies and Projects</h2>
             <ul>
                 <li>Intro to Programming Project (October – December 2023): Collaboratively designed and coded a beginner-level video game in Python.</li>
                 <li>Greenpower USA (September 2023 - Present): Collaborated on wiring and programming tasks utilizing Arduino technology within a race car.</li>
                 <li>Foundations of Systems I Final Project: Created a Raspberry Pi-based web server project for local hosting of a website and database.</li>
             </ul>
         </div>
+    </section>
 
-        <div class="section">
-            <h2>Technical Skills</h2>
-            <p><strong>Programming Language:</strong> Python, Linux (Intermediate)</p>
-            <p><strong>Skills:</strong> Bilingual, Adaptability, Problem Solving, Conflict Resolution, Leadership</p>
+    <section id="contact">
+        <div class="container contact-info">
+            <h2>Contact Information</h2>
+            <p>(956)-282-0240</p>
+            <p>carlosgarcia2245@outlook.com</p>
         </div>
-    </div>
+    </section>
 </body>
-
 </html>
