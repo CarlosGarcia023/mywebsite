@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Carlos Garcia - Cybersecurity Professional</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" media="screen and (max-width:800px)" href="tablet.css" />
-    <link rel="stylesheet" media="screen and (max-width:530px)" href="phone.css" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carlos Garcia's Resume</title>
     <style>
-        /* Additional CSS styles for the new sections */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+            color: #333;
+        }
+
         .container {
             max-width: 800px;
             margin: 20px auto;
@@ -20,46 +23,77 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
-        h2, h3 {
+        h1,
+        h2,
+        h3 {
             color: #007bff;
-            margin-top: 10px;
+        }
+
+        h2 {
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+
+        h3 {
+            margin-top: 20px;
+        }
+
+        .contact-info {
+            margin-bottom: 20px;
+        }
+
+        .contact-info p {
+            margin: 5px 0;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .section h3 {
+            margin-top: 0;
         }
 
         ul {
             list-style-type: none;
             padding: 0;
+            margin: 0;
         }
 
-        li {
+        ul li {
             margin-bottom: 5px;
+        }
+
+        .skills {
+            font-weight: bold;
         }
     </style>
 </head>
+
 <body>
-    <nav class="navbar">
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#services">Service</a></li>
-            <li><a href="#contact">Contact Me</a></li>
-        </ul>
-    </nav>
-
-    <section id="home">
-        <div class="main">
-            <h1 class="headings">
-                Carlos Garcia <br />
-                Cybersecurity Professional
-            </h1>
-            <h2>(956)-282-0240 | carlosgarcia2245@outlook.com | Zapata, Texas</h2>
-            <br />
-            <button class="btn"><a href="#contact">Contact Me</a></button>
+    <div class="container">
+        <h1>Carlos Garcia</h1>
+        <div class="contact-info">
+            <p>(956)-282-0240 | carlosgarcia2245@outlook.com | Zapata, Texas</p>
         </div>
-    </section>
 
-    <section id="about">
-        <div class="container">
+        <div class="section">
+            <h2>EDUCATION</h2>
+            <p><strong>University of Texas at Rio Grande Valley, Edinburg, Texas</strong><br>
+                Graduation: December 2025 (Expected)<br>
+                Bachelor of Science in Cyber Security<br>
+                GPA: 3.86/4.00
+            </p>
+            <p><strong>Zapata High School, Zapata, Texas</strong><br>
+                Awards: Zapata Early College Academy, Border Patrol YOTM/YOTY, Top Ten (Rank 9), HSF (Hispanic Scholarship Fund) 23-24 Scholar
+            </p>
+            <p><strong>Relevant Coursework:</strong><br>
+                Introduction to Cyberspace, Introduction to Programming Python, Foundations of Systems I, II, Prog Cyber Sys Reverse Eng.
+            </p>
+        </div>
+
+        <div class="section">
             <h2>Professional Experience</h2>
             <p>University of Texas at Rio Grande Valley, Edinburg, Texas<br />
                 Graduation: December 2025 (Expected)<br />
@@ -73,39 +107,22 @@
                 Introduction to Cyberspace, Introduction to Programming Python, Foundations of Systems I, II, Prog Cyber Sys Reverse Eng.
             </p>
         </div>
-    </section>
 
-    <section id="portfolio">
-        <div class="container">
-            <h2>Case Studies and Projects</h2>
+        <div class="section">
+            <h2>RESEARCH AND PROJECTS</h2>
             <ul>
                 <li>Intro to Programming Project (October – December 2023): Collaboratively designed and coded a beginner-level video game in Python.</li>
                 <li>Greenpower USA (September 2023 - Present): Collaborated on wiring and programming tasks utilizing Arduino technology within a race car.</li>
                 <li>Foundations of Systems I Final Project: Created a Raspberry Pi-based web server project for local hosting of a website and database.</li>
             </ul>
         </div>
-    </section>
 
-    <section id="services">
-        <div class="container">
-            <h2>Skills and Expertise</h2>
-            <ul>
-                <li>Cybersecurity Strategy</li>
-                <li>Network Security</li>
-                <li>Incident Response</li>
-                <li>Risk Assessment</li>
-                <li>Penetration Testing</li>
-                <li>Security Tools: Python, Linux (Intermediate)</li>
-            </ul>
+        <div class="section">
+            <h2>Technical Skills</h2>
+            <p><strong>Programming Language:</strong> Python, Linux (Intermediate)</p>
+            <p><strong>Skills:</strong> Bilingual, Adaptability, Problem Solving, Conflict Resolution, Leadership</p>
         </div>
-    </section>
-
-    <section id="contact">
-        <div class="container">
-            <h2>Contact Information</h2>
-            <p>(956)-282-0240 | carlosgarcia2245@outlook.com</p>
-            <p>LinkedIn: [Your LinkedIn Profile URL]</p>
-        </div>
-    </section>
+    </div>
 </body>
+
 </html>
