@@ -1,30 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Carlos Garcia - Cybersecurity Professional</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" media="screen and (max-width:800px)" href="tablet.css" />
+    <link rel="stylesheet" media="screen and (max-width:530px)" href="phone.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f9f9f9;
-            color: #333;
-        }
-
-        header {
-            background-color: #007bff;
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
-        }
-
-        h1 {
-            margin-top: 0;
-        }
-
+        /* Additional CSS styles for the new sections */
         .container {
             max-width: 800px;
             margin: 20px auto;
@@ -34,25 +20,14 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
-        h2 {
+        h2, h3 {
             color: #007bff;
-            border-bottom: 2px solid #007bff;
-            padding-bottom: 5px;
-            margin-bottom: 10px;
-        }
-
-        h3 {
-            margin-top: 20px;
-        }
-
-        p {
-            margin-bottom: 10px;
+            margin-top: 10px;
         }
 
         ul {
             list-style-type: none;
             padding: 0;
-            margin: 0;
         }
 
         li {
@@ -60,42 +35,77 @@
         }
     </style>
 </head>
-
 <body>
-    <header>
-        <h1>Carlos Garcia - Cybersecurity Professional</h1>
-    </header>
-
-    <div class="container">
-        <h2>Professional Portfolio</h2>
-        <p><strong>Contact:</strong> (956)-282-0240 | carlosgarcia2245@outlook.com | Zapata, Texas</p>
-
-        <h3>Experience</h3>
+    <nav class="navbar">
         <ul>
-            <li>University of Texas at Rio Grande Valley, Edinburg, Texas (Expected Graduation: December 2025)</li>
-            <li>Zapata High School, Zapata, Texas</li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#services">Service</a></li>
+            <li><a href="#contact">Contact Me</a></li>
         </ul>
+    </nav>
 
-        <h3>Skills and Expertise</h3>
-        <ul>
-            <li>Programming Languages: Python, Linux (Intermediate)</li>
-            <li>Skills: Bilingual, Adaptability, Problem Solving, Conflict Resolution, Leadership</li>
-        </ul>
+    <section id="home">
+        <div class="main">
+            <h1 class="headings">
+                Carlos Garcia <br />
+                Cybersecurity Professional
+            </h1>
+            <h2>(956)-282-0240 | carlosgarcia2245@outlook.com | Zapata, Texas</h2>
+            <br />
+            <button class="btn"><a href="#contact">Contact Me</a></button>
+        </div>
+    </section>
 
-        <h2>Case Studies and Projects</h2>
-        <ul>
-            <li>Intro to Programming Project: Collaboratively designed and coded a beginner-level video game in Python.</li>
-            <li>Greenpower USA: Collaborated on wiring and programming tasks utilizing Arduino technology within a race car.</li>
-            <li>Foundations of Systems I Final Project: Created a Raspberry Pi-based web server project for local hosting of a website and database.</li>
-        </ul>
+    <section id="about">
+        <div class="container">
+            <h2>Professional Experience</h2>
+            <p>University of Texas at Rio Grande Valley, Edinburg, Texas<br />
+                Graduation: December 2025 (Expected)<br />
+                Bachelor of Science in Cyber Security<br />
+                GPA: 3.86/4.00
+            </p>
+            <p>Zapata High School, Zapata, Texas<br />
+                Awards: Zapata Early College Academy, Border Patrol YOTM/YOTY, Top Ten (Rank 9), HSF (Hispanic Scholarship Fund) 23-24 Scholar
+            </p>
+            <p>Relevant Coursework:<br />
+                Introduction to Cyberspace, Introduction to Programming Python, Foundations of Systems I, II, Prog Cyber Sys Reverse Eng.
+            </p>
+        </div>
+    </section>
 
-        <h2>Blog and Resources</h2>
-        <p>Check out my <a href="#">blog</a> for insights and best practices in cybersecurity.</p>
-        <p>Explore <a href="#">resources</a> for valuable information and tools in cybersecurity.</p>
+    <section id="portfolio">
+        <div class="container">
+            <h2>Case Studies and Projects</h2>
+            <ul>
+                <li>Intro to Programming Project (October – December 2023): Collaboratively designed and coded a beginner-level video game in Python.</li>
+                <li>Greenpower USA (September 2023 - Present): Collaborated on wiring and programming tasks utilizing Arduino technology within a race car.</li>
+                <li>Foundations of Systems I Final Project: Created a Raspberry Pi-based web server project for local hosting of a website and database.</li>
+            </ul>
+        </div>
+    </section>
 
-        <h2>Contact</h2>
-        <p>Feel free to reach out to me at carlosgarcia2245@outlook.com for any inquiries or collaboration opportunities.</p>
-    </div>
+    <section id="services">
+        <div class="container">
+            <h2>Skills and Expertise</h2>
+            <ul>
+                <li>Cybersecurity Strategy</li>
+                <li>Network Security</li>
+                <li>Incident Response</li>
+                <li>Risk Assessment</li>
+                <li>Penetration Testing</li>
+                <li>Security Tools: Python, Linux (Intermediate)</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Information</h2>
+            <p>(956)-282-0240 | carlosgarcia2245@outlook.com</p>
+            <p>LinkedIn: [Your LinkedIn Profile URL]</p>
+        </div>
+    </section>
 </body>
-
 </html>
